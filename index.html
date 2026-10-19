@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#365b4b">
+<title>Mundo das Páginas — Biblioteca escolar</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><div class="brand-mark">✦</div><div><strong>Mundo das Páginas</strong><small>Biblioteca escolar</small></div></div>
+    <div class="profile-mini"><div class="avatar" id="avatarInitial">B</div><div><strong id="sideName">Bibliotecária</strong><small id="sideRole">Administração</small></div></div>
+    <nav id="nav">
+      <button class="nav-item active" data-view="inicio"><span>⌂</span> Visão geral</button>
+      <button class="nav-item" data-view="catalogo"><span>▤</span> Catálogo</button>
+      <button class="nav-item" data-view="emprestimos"><span>↗</span> Empréstimos</button>
+      <button class="nav-item" data-view="leitores"><span>♙</span> Leitores</button>
+      <button class="nav-item" data-view="comunidade"><span>♡</span> Comunidade</button>
+      <button class="nav-item" data-view="desafios"><span>✧</span> Desafios de leitura</button>
+      <button class="nav-item" data-view="relatorios"><span>▥</span> Relatórios</button>
+      <button class="nav-item" data-view="configuracoes"><span>⚙</span> Configurações</button>
+    </nav>
+    <div class="sidebar-bottom"><div class="mode-label"><span class="status-dot"></span> Demonstração local</div><button class="btn ghost full" id="switchUser">Trocar perfil</button></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><button class="mobile-menu" id="menuToggle">☰</button><div><p class="eyebrow" id="dateLabel">BIBLIOTECA ESCOLAR</p><h1 id="pageTitle">Visão geral</h1></div><div class="top-actions"><button class="icon-btn" title="Ajuda" id="helpBtn">?</button><div class="top-avatar" id="topAvatar">B</div></div></header>
+    <section id="viewRoot" class="view-root"></section>
+    <footer>© <span id="year"></span> Mundo das Páginas <span>•</span> Seus dados ficam neste navegador</footer>
+  </main>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<dialog id="modal"><form method="dialog" id="modalForm"><div class="modal-head"><div><p class="eyebrow" id="modalEyebrow">MUNDO DAS PÁGINAS</p><h2 id="modalTitle">Novo registro</h2></div><button class="icon-btn" value="cancel" aria-label="Fechar">×</button></div><div id="modalBody"></div><div class="modal-actions" id="modalActions"></div></form></dialog>
+<script src="app.js"></script>
+</body></html>
